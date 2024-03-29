@@ -16,7 +16,7 @@ type Query{
 type Mutation{
     signUp(input: SignUpInput!):User
     login(input:LoginInput!):User
-    logout(input:LogoutInput!):User
+    logout:LogoutResponse
 }
 
 input SignUpInput{
@@ -30,10 +30,9 @@ input LoginInput{
     username: String!
     password: String!
 }
-input LogoutInput{
+type LogoutResponse{
     message: String!
 }
 `;
 
-
-export default userTypeDef; 
+export default userTypeDef;

@@ -29,6 +29,7 @@ input CreateTransactionInput{
     location:String!,
     data:String
 }
+
 input UpdateTransactionInput{
     description:String!,
     paymentType:String,
